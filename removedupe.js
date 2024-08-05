@@ -19,8 +19,4 @@ function removeDuplicatesNI(arr) {
 }
 
 console.log([1,1,13,3,2,2,3,2].includes(1))
-
-
-
-
-  console.log(removeDuplicatesNI([1, 2, 21, 1, 1, 3, 41, 2, 4, 3, 1, 2]));
+console.log(removeDuplicatesNI([1, 2, 21, 1, 1, 3, 41, 2, 4, 3, 1, 2]));
