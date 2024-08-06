@@ -6,6 +6,7 @@ function firstNonRepeatingChar(inp) {
     for (let i = 0; i < arr.length; i++) {
         if (dupes[arr[i]]) {
             dupes[arr[i]]++;
+
         } else {
             dupes[arr[i]] = 1;
         }
@@ -17,7 +18,7 @@ function firstNonRepeatingChar(inp) {
             return arr[i];
         }
     }
-
+    console.log(dupes)
     return null;
 }
 
