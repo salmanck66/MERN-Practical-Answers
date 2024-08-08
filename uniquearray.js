@@ -14,7 +14,7 @@ function uniArray(array)
     return newArr
 }
 
-console.log(uniArraySet([5, 5, 5, 5, 5]))
+console.log(uniArrayFrom([5, 5, 5, 5, 5]))
 
 // first answer o(n)
 function uniArraySet(array)
@@ -25,9 +25,16 @@ function uniArraySet(array)
     array.forEach(element => {
         if(!seenset.has(element))
         {
-            seenset.add(element)
+            seenset.add(element)    
             newArr.push(element)
         }
     });
+    console.log(seenset)
     return newArr
+}
+
+function uniArrayFrom(array)
+{
+    let myset = new Set(array)
+    return Array.from(myset)
 }
