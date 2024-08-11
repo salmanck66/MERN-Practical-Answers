@@ -1,6 +1,6 @@
 ///input: adarsh
 //Eg81Br
-
+//random alphanumeric gen to input length
 function randomGen(input) {
   let gen = [];
   while (gen.length < input.split("").length / 2) {
